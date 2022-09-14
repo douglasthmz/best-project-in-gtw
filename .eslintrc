@@ -1,0 +1,50 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+  },
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+  },
+  "extends": "airbnb",
+  "rules": {
+    "linebreak-style": 0,
+    "no-shadow": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/prop-types": 0,
+    "react/require-default-props": 0,
+    "import/no-cycle": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-one-expression-per-line": "off",
+    "no-continue": "off",
+    "react/function-component-definition": [1, {
+      "namedComponents": "arrow-function",
+      "unnamedComponents": "arrow-function"
+    }],
+    "no-restricted-imports": ["error", {
+      "patterns": [{
+        "group": ["antd/lib/*"],
+        "message": "\n!!! --- ATENÇÃO --- !!! \nTrocar o import para ser dierto de 'antd' se não VAI DAR ERRO NO VITE ao buildar"
+      }]
+    }]
+  },
+  "ignorePatterns": "*.d.ts",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src", 
+          "src/assets", 
+          "src/graphql", 
+          "src/components", 
+          "src/screens", 
+          "src/routes",
+          "src/styles",
+          "src/services"
+        ]
+      }
+    }
+  }
+}
