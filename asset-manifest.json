@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/best-project-in-gwt/static/css/main.e6c13ad2.css",
+    "main.js": "/best-project-in-gwt/static/js/main.89248409.js",
+    "static/js/787.2007b48b.chunk.js": "/best-project-in-gwt/static/js/787.2007b48b.chunk.js",
+    "index.html": "/best-project-in-gwt/index.html",
+    "main.e6c13ad2.css.map": "/best-project-in-gwt/static/css/main.e6c13ad2.css.map",
+    "main.89248409.js.map": "/best-project-in-gwt/static/js/main.89248409.js.map",
+    "787.2007b48b.chunk.js.map": "/best-project-in-gwt/static/js/787.2007b48b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.89248409.js"
+  ]
+}
