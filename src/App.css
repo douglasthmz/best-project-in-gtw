@@ -1,1 +1,86 @@
 
+.welcome-container {
+  background-color: #0bb599;
+  height: 100vh;
+  width: auto;
+  margin: 0 auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  /* background-size: cover;  */
+}
+
+.back-button {
+  display: none;
+}
+
+.next-button {
+  /* display: none; */
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 600;
+  background-color: #0bb599;
+}
+
+.welcome {
+  width: 230px;
+  height: 55px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 373px;
+  margin-left: calc(50% - 114px);
+}
+
+.name {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  top: 420px;
+  margin-left: calc(50% + 68px);
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 275px;
+  margin: 0 auto;
+}
+
+.float-label {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 12px;
+  top: 12px;
+  transition: 0.2s ease all;
+}
+
+.label-float {
+  top: 6px;
+  font-size: 10px;
+}
+
+.name-input {
+  margin-top: 274px;
+  width: auto;
+  margin-left: calc(50% - 114px)
+}
+#nome {
+  width: 200px;
+}
+
+.email-input {
+  margin-top: 12px;
+  width: auto;
+  margin-left: calc(50% - 114px)
+}
+#email {
+  width: 200px;
+}
