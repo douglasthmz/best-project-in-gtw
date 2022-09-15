@@ -129,3 +129,31 @@
   top: 440px;
   left: calc(50% - 30px);
 }
+
+.integration {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  top: 420px;
+  left: calc(50% + 68px);
+}
+.back-integration {
+  position: absolute;
+  color: #fff;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  top: 420px;
+  left: calc(50% - 114px);
+}
+
+.hidden {
+  display: none;
+}
+
+.back-hidden {
+  display: none;
+}

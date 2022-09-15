@@ -1,6 +1,7 @@
 {
   "name": "gyra-widget",
   "version": "0.1.0",
+  "homepage": "https://douglasthmz.github.io/best-project-in-gtw",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",

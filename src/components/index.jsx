@@ -5,19 +5,25 @@ import {
 } from 'antd';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import CheckIcon from '@mui/icons-material/Check';
+
 import { useWidgetContext } from './context';
 
 import SignUp from './steps/SignUp';
 import SignUp2 from './steps/SignUp2';
 import Integration from './steps/Integration';
 import Welcome from './steps/Welcome';
-import GoodBye from './steps/GoodBye';
 import Safety from './steps/Safety';
 
 import welcome from '../assets/welcome.svg';
 import name from '../assets/name-email.svg';
 import cpf from '../assets/cnpj-cpf.svg';
 import safety from '../assets/safety.svg';
+import integration from '../assets/integration.svg';
+import loading1 from '../assets/loading-1.svg';
+import loading2 from '../assets/loading-2.svg';
+import success from '../assets/success.svg';
+import done from '../assets/done.svg';
 
 // const { useForm } = Form;
 
@@ -33,7 +39,7 @@ const Widget = () => {
     setPage(page - 1);
   };
   const handleNextButton = async () => {
-    if (page === 6) return;
+    if (page === 9) return;
     setPage(page + 1);
   };
 
@@ -61,7 +67,15 @@ const Widget = () => {
         );
       case 6:
         return (
-          <GoodBye />
+          <Welcome />
+        );
+      case 7:
+        return (
+          <Welcome />
+        );
+      case 8:
+        return (
+          <Welcome />
         );
       default:
         return false;
@@ -89,6 +103,36 @@ const Widget = () => {
         setBackground(safety);
         setButtonClass('safety');
         setButtonText('Comprove seu faturamento');
+        break;
+      case 5:
+        setBackground(integration);
+        setButtonClass('integration');
+        setButtonText(<CheckIcon />);
+        break;
+      case 6:
+        setBackground(loading1);
+        setButtonClass('hidden');
+        setTimeout(() => {
+          setPage(page + 1);
+        }, 1500);
+        break;
+      case 7:
+        setBackground(loading2);
+        setButtonClass('hidden');
+        setTimeout(() => {
+          setPage(page + 1);
+        }, 1500);
+        break;
+      case 8:
+        setBackground(success);
+        setButtonClass('hidden');
+        setTimeout(() => {
+          setPage(page + 1);
+        }, 1500);
+        break;
+      case 9:
+        setBackground(done);
+        setButtonClass('hidden');
         break;
       default:
         setBackground(welcome);
