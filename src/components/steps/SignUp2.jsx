@@ -6,10 +6,10 @@ import TextField from '@mui/material/TextField';
 const SignUp = () => (
   <div className="sign-up">
     <div className="name-input">
-      <TextField id="nome" label="Nome" variant="outlined" color="success" />
+      <TextField id="cpf" label="CPF" variant="outlined" color="success" />
     </div>
     <div className="email-input">
-      <TextField id="email" label="Email" variant="outlined" className="email-text" color="success" />
+      <TextField id="cnpj" label="CNPJ" variant="outlined" className="email-text" color="success" />
     </div>
   </div>
 );

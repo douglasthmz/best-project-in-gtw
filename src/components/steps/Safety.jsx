@@ -3,8 +3,8 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-const Integration = () => (
+const Safety = () => (
   <div />
 );
 
-export default Integration;
+export default Safety;

@@ -10,7 +10,11 @@
 }
 
 .back-button {
-  display: none;
+  /* display: none; */
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 600;
+  background: none;
+  cursor: pointer;
 }
 
 .next-button {
@@ -18,15 +22,21 @@
   font-family: 'Bai Jamjuree', sans-serif;
   font-weight: 600;
   background-color: #0bb599;
+  cursor: pointer;
 }
 
 .welcome {
+  position: absolute;
   width: 230px;
   height: 55px;
   border: none;
   border-radius: 10px;
-  margin-top: 373px;
-  margin-left: calc(50% - 114px);
+  top: 373px;
+  left: calc(50% - 114px);
+}
+
+.back-welcome {
+  display: none;
 }
 
 .name {
@@ -36,7 +46,17 @@
   border: none;
   border-radius: 50%;
   top: 420px;
-  margin-left: calc(50% + 68px);
+  left: calc(50% + 68px);
+}
+
+.back-name {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  top: 420px;
+  left: calc(50% - 114px);
 }
 
 .sign-up {
@@ -81,6 +101,31 @@
   width: auto;
   margin-left: calc(50% - 114px)
 }
+.email-text {
+  border-color: #0bb599;
+}
 #email {
   width: 200px;
+}
+
+.safety { 
+  position: absolute;
+  background-color: #000000;
+  color: #ffffff;
+  width: 230px;
+  height: 55px;
+  border: none;
+  border-radius: 10px;
+  top: 385px;
+  left: calc(50% - 115px);
+}
+
+.back-safety {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  top: 440px;
+  left: calc(50% - 30px);
 }

@@ -3,15 +3,21 @@ import {
   Button,
   // Form,
 } from 'antd';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useWidgetContext } from './context';
 
 import SignUp from './steps/SignUp';
+import SignUp2 from './steps/SignUp2';
 import Integration from './steps/Integration';
 import Welcome from './steps/Welcome';
 import GoodBye from './steps/GoodBye';
+import Safety from './steps/Safety';
 
 import welcome from '../assets/welcome.svg';
-import name from '../assets/name-cnpj.svg';
+import name from '../assets/name-email.svg';
+import cpf from '../assets/cnpj-cpf.svg';
+import safety from '../assets/safety.svg';
 
 // const { useForm } = Form;
 
@@ -27,7 +33,7 @@ const Widget = () => {
     setPage(page - 1);
   };
   const handleNextButton = async () => {
-    if (page === 4) return;
+    if (page === 6) return;
     setPage(page + 1);
   };
 
@@ -43,9 +49,17 @@ const Widget = () => {
         );
       case 3:
         return (
-          <Integration />
+          <SignUp2 />
         );
       case 4:
+        return (
+          <Safety />
+        );
+      case 5:
+        return (
+          <Integration />
+        );
+      case 6:
         return (
           <GoodBye />
         );
@@ -64,7 +78,17 @@ const Widget = () => {
       case 2:
         setBackground(name);
         setButtonClass('name');
-        setButtonText('->');
+        setButtonText(<ArrowForwardIcon />);
+        break;
+      case 3:
+        setBackground(cpf);
+        setButtonClass('name');
+        setButtonText(<ArrowForwardIcon />);
+        break;
+      case 4:
+        setBackground(safety);
+        setButtonClass('safety');
+        setButtonText('Comprove seu faturamento');
         break;
       default:
         setBackground(welcome);
@@ -78,11 +102,11 @@ const Widget = () => {
       {handleContent(page)}
       <Button
         type="secondary"
-        className="back-button"
+        className={`back-button ${buttonClass && `back-${buttonClass}`}`}
         // disabled={loading}
         onClick={handleBackButton}
       >
-        Voltar
+        <ArrowBackIcon /> Voltar
       </Button>
       <Button
         type="primary"
