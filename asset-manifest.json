@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/best-project-in-gtw/static/css/main.d87c94b1.css",
-    "main.js": "/best-project-in-gtw/static/js/main.6cf6a3a8.js",
+    "main.css": "/best-project-in-gtw/static/css/main.8229d3fe.css",
+    "main.js": "/best-project-in-gtw/static/js/main.53196fd0.js",
     "static/js/787.2007b48b.chunk.js": "/best-project-in-gtw/static/js/787.2007b48b.chunk.js",
+    "static/media/safety.svg": "/best-project-in-gtw/static/media/safety.8e9f77f0eede202047d35be9e1e6de84.svg",
     "static/media/welcome.svg": "/best-project-in-gtw/static/media/welcome.06470c544df46dfe21880dec1ccbf978.svg",
-    "static/media/name-cnpj.svg": "/best-project-in-gtw/static/media/name-cnpj.5cceb30be202347d0fc1cc7a64c3f321.svg",
+    "static/media/name-email.svg": "/best-project-in-gtw/static/media/name-email.7d1baa7ab2b79fde99de52ed1ddd6cba.svg",
+    "static/media/cnpj-cpf.svg": "/best-project-in-gtw/static/media/cnpj-cpf.cb83e09e34ab280a3c416cb20a99802d.svg",
     "index.html": "/best-project-in-gtw/index.html",
-    "main.d87c94b1.css.map": "/best-project-in-gtw/static/css/main.d87c94b1.css.map",
-    "main.6cf6a3a8.js.map": "/best-project-in-gtw/static/js/main.6cf6a3a8.js.map",
+    "main.8229d3fe.css.map": "/best-project-in-gtw/static/css/main.8229d3fe.css.map",
+    "main.53196fd0.js.map": "/best-project-in-gtw/static/js/main.53196fd0.js.map",
     "787.2007b48b.chunk.js.map": "/best-project-in-gtw/static/js/787.2007b48b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d87c94b1.css",
-    "static/js/main.6cf6a3a8.js"
+    "static/css/main.8229d3fe.css",
+    "static/js/main.53196fd0.js"
   ]
 }
